@@ -110,6 +110,7 @@ body{min-height:100vh;display:flex;flex-direction:column}
 .lightbox{position:fixed;inset:0;background:rgba(0,0,0,.92);display:none;align-items:center;justify-content:center;z-index:1000}
 .lightbox.open{display:flex}
 .lightbox img{max-width:min(92vw,1200px);max-height:92vh;object-fit:contain;border:none;outline:0}
+.lightbox img{width:auto;height:auto}
 .card__media img{cursor:zoom-in}
 
 /* Contact section styles (inspired by ETC-SC) */
@@ -141,11 +142,14 @@ body{min-height:100vh;display:flex;flex-direction:column}
   .chips{justify-content:center}
 }
 @media (max-width:640px){
+  .lightbox img{max-width:96vw;max-height:86vh}
   .grid{grid-template-columns:1fr;gap:14px}
   .brand{display:none}
   .brand__name{display:none}
   .top-search{display:none}
-  .nav{display:flex;gap:16px;justify-content:center;white-space:nowrap}
+  .nav{display:flex;gap:10px;justify-content:center;white-space:nowrap}
+  .nav__link{padding:6px 10px}
+  .actions .theme-toggle{display:none}
   .hero__title{font-size:36px}
   .search input{min-width:0}
   .hero{padding:48px 0 56px}
