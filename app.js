@@ -9,18 +9,15 @@
 
   // Asset list used for hero rotation (up to 20)
   const ASSETS = [
-    './assets/bag.webp',
-    './assets/black-bag.webp',
-    './assets/dress.webp',
-    './assets/basin.webp',
-    './assets/hab.webp',
-    './assets/habit.webp',
-    './assets/sandal.webp',
-    './assets/shoes.webp',
-    './assets/lepi.webp',
-    './assets/pagne.webp',
-    './assets/cho.webp',
+    './assets/black-bag-nob.webp',
+    './assets/bag-nob.webp',
+    './assets/lady-nob.webp',
+    './assets/cho-nob.webp',
+    './assets/dress2-nob.webp',
+    './assets/chev.webp',
+    './assets/baz-nob.webp',
   ];
+
   const products = [
     { id: 'p1', title: 'Sac A-Line', price: 115, category: 'sacs', image: './assets/bag.webp'},
     { id: 'p2', title: 'Robe Cocktail', price: 133, category: 'robes', image: './assets/dress.webp', isNew: false },
@@ -33,6 +30,9 @@
     { id: 'p9', title: 'Sandales Été', price: 79, category: 'chaussures', image: './assets/sandal.webp' },
     { id: 'p10', title: 'Sandales', price: 79, category: 'chaussures', image: './assets/cho.webp' },
     { id: 'p11', title: 'Pagne Lepi', price: 79, category: 'accessoires', image: './assets/pagne.webp', isNew: true },
+    { id: 'p12', title: 'Bazin', price: 79, category: 'accessoires', image: './assets/baz.webp' },
+    { id: 'p13', title: 'Meches', price: 79, category: 'accessoires', image: './assets/chev.webp' },
+    { id: 'p14', title: 'Dress', price: 79, category: 'accessoires', image: './assets/dress2.webp', isNew: true },
 
   ];
 
@@ -44,6 +44,9 @@
   const dropdown = document.getElementById('contactsDropdown');
   const yearEl = document.getElementById('year');
   const heroGallery = document.getElementById('heroGallery');
+  const lightboxEl = document.getElementById('lightbox');
+  const themeToggle = document.getElementById('themeToggle');
+  const themeIcon = document.getElementById('themeIcon');
 
   if (yearEl) yearEl.textContent = String(new Date().getFullYear());
 
@@ -72,7 +75,7 @@
         <div class="card__body">
           <h3 class="card__title">${p.title}</h3>
           <div class="card__actions">
-            <a class="btn whatsapp" href="https://api.whatsapp.com/send?phone=224666958301&text=Bonjour%20!%20Je%20suis%20int%C3%A9ress%C3%A9(e)%20par%20${encodeURIComponent(p.title)}" target="_blank" rel="noreferrer">
+            <a class="btn whatsapp" href="https://api.whatsapp.com/send?phone=224628767038&text=Bonjour%20!%20Je%20suis%20int%C3%A9ress%C3%A9(e)%20par%20${encodeURIComponent(p.title)}" target="_blank" rel="noreferrer">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488" fill="currentColor"/></svg>
               <span>WhatsApp</span>
             </a>
@@ -147,10 +150,22 @@
       const allChip = document.querySelector('.chip[data-cat="all"]');
       if (allChip) updateActiveChip(allChip);
       renderProducts();
-      // Jump to results grid
-      const gridEl = document.getElementById('productGrid');
-      if (gridEl && typeof gridEl.scrollIntoView === 'function') {
-        gridEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      // Jump to boutique section
+      const boutiqueEl = document.getElementById('boutique');
+      if (boutiqueEl && typeof boutiqueEl.scrollIntoView === 'function') {
+        boutiqueEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        if (typeof history !== 'undefined' && typeof history.replaceState === 'function') {
+          history.replaceState(null, '', '#boutique');
+        } else if (typeof window !== 'undefined') {
+          window.location.hash = 'boutique';
+        }
+      }
+
+      // Clear the top search input after executing the query
+      if (typeof topSearch?.reset === 'function') {
+        topSearch.reset();
+      } else if (topSearchInput) {
+        topSearchInput.value = '';
       }
     });
   }
@@ -170,6 +185,22 @@
       const id = btn.getAttribute('data-details');
       const product = products.find((x) => x.id === id);
       if (product) alert(`${product.title} — ${formatPrice(product.price)}`);
+    });
+
+    // Open lightbox when clicking on a product image
+    grid.addEventListener('click', (e) => {
+      const target = e.target;
+      if (!(target instanceof HTMLElement)) return;
+      const img = target.closest('.card__media img');
+      if (!img || !(img instanceof HTMLImageElement)) return;
+      if (!lightboxEl) return;
+      // Inject only the image inside the overlay
+      const src = img.getAttribute('src') || '';
+      const alt = img.getAttribute('alt') || '';
+      lightboxEl.innerHTML = `<img src="${src}" alt="${alt}">`;
+      lightboxEl.classList.add('open');
+      lightboxEl.setAttribute('aria-hidden', 'false');
+      if (document && document.body) document.body.style.overflow = 'hidden';
     });
   }
 
@@ -218,6 +249,48 @@
   }
   renderHeroBatch();
   setInterval(renderHeroBatch, 4000);
+
+  // Close lightbox on backdrop click or Escape
+  if (lightboxEl){
+    lightboxEl.addEventListener('click', (e) => {
+      if (e.target === lightboxEl){
+        lightboxEl.classList.remove('open');
+        lightboxEl.setAttribute('aria-hidden', 'true');
+        if (document && document.body) document.body.style.overflow = '';
+        lightboxEl.innerHTML = '';
+      }
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && lightboxEl.classList.contains('open')){
+        lightboxEl.classList.remove('open');
+        lightboxEl.setAttribute('aria-hidden', 'true');
+        if (document && document.body) document.body.style.overflow = '';
+        lightboxEl.innerHTML = '';
+      }
+    });
+  }
+
+  // Theme handling: default to light (Latte); respect saved preference
+  const THEME_KEY = 'hc_theme';
+  function applyTheme(theme){
+    const isDark = theme === 'dark';
+    document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
+    if (themeIcon){
+      themeIcon.src = isDark ? './assets/theme_light.webp' : './assets/theme_dark.webp';
+      themeIcon.alt = isDark ? 'Icône thème clair' : 'Icône thème sombre';
+    }
+  }
+  const saved = (typeof localStorage !== 'undefined') ? localStorage.getItem(THEME_KEY) : null;
+  applyTheme(saved === 'dark' ? 'dark' : 'light');
+
+  if (themeToggle){
+    themeToggle.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+      const next = current === 'dark' ? 'light' : 'dark';
+      applyTheme(next);
+      try{ localStorage.setItem(THEME_KEY, next); }catch(_){}
+    });
+  }
 })();
 
 

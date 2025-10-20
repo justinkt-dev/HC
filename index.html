@@ -28,6 +28,9 @@
             <input id="topSearchInput" type="search" placeholder="Rechercher…" aria-label="Recherche">
             <button class="icon-btn" aria-label="Rechercher" type="submit">🔍</button>
           </form>
+          <button id="themeToggle" class="icon-btn theme-toggle" aria-label="Changer de thème" title="Changer de thème">
+            <img id="themeIcon" src="./assets/theme_dark.webp" alt="Icône du thème" width="20" height="20" />
+          </button>
         </div>
       </div>
     </header>
@@ -68,6 +71,9 @@
       <section class="container">
         <div id="productGrid" class="grid"></div>
       </section>
+
+      <!-- Lightbox overlay (image-only) -->
+      <div id="lightbox" class="lightbox" aria-hidden="true"></div>
 
       <!-- Contact section -->
 
