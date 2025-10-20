@@ -147,8 +147,9 @@ body{min-height:100vh;display:flex;flex-direction:column}
   .brand{display:none}
   .brand__name{display:none}
   .top-search{display:none}
-  .nav{display:flex;gap:10px;justify-content:center;white-space:nowrap}
-  .nav__link{padding:6px 10px}
+  .container{padding:0 12px}
+  .nav{display:flex;gap:min(3.5vw,12px);justify-content:center;white-space:nowrap;max-width:100%}
+  .nav__link{padding:6px min(3.5vw,12px);font-size:clamp(.8rem,3.6vw,.95rem)}
   .actions .theme-toggle{display:none}
   .hero__title{font-size:36px}
   .search input{min-width:0}
@@ -156,6 +157,11 @@ body{min-height:100vh;display:flex;flex-direction:column}
   .contact-layout{grid-template-columns:1fr}
   .chips{justify-content:center;gap:8px}
   .chip{height:36px;padding:8px 14px;font-size:.95rem}
+}
+
+@media (max-width:360px){
+  .nav{gap:min(2.5vw,8px)}
+  .nav__link{padding:4px 6px;font-size:.8rem}
 }
 
 
