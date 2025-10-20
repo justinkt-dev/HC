@@ -9,15 +9,18 @@
 
   const bag = './assets/bag.webp';
   const products = [
-    { id: 'p1', title: 'Sac A-Line', price: 115, category: 'sacs', image: './assets/bag.webp', isNew: true },
+    { id: 'p1', title: 'Sac A-Line', price: 115, category: 'sacs', image: './assets/bag.webp'},
     { id: 'p2', title: 'Robe Cocktail', price: 133, category: 'robes', image: './assets/dress.webp', isNew: false },
     { id: 'p3', title: 'Robe Soleil', price: 120, category: 'robes', image: './assets/hab.webp', isNew: true },
-    { id: 'p4', title: 'Sac Classique', price: 89, category: 'sacs', image: './assets/basin.webp', isNew: false },
+    { id: 'p4', title: 'Sac Classique', price: 89, category: 'sacs', image: './assets/basin.webp'},
     { id: 'p5', title: 'Ceinture Fine', price: 29, category: 'ceintures', image: './assets/shoes.webp', isNew: false },
     { id: 'p6', title: 'Escarpins Chic', price: 149, category: 'chaussures', image: './assets/habit.webp', isNew: true },
-    { id: 'p7', title: 'Boucles d’oreilles', price: 39, category: 'accessoires', image: './assets/black-bag.webp', isNew: false },
+    { id: 'p7', title: 'Boucles d’oreilles', price: 39, category: 'accessoires', image: './assets/black-bag.webp' },
     { id: 'p8', title: 'Sac Bandoulière', price: 99, category: 'sacs', image: './assets/bag.webp', isNew: false },
-    { id: 'p9', title: 'Sandales Été', price: 79, category: 'chaussures', image: './assets/sandal.webp', isNew: true },
+    { id: 'p9', title: 'Sandales Été', price: 79, category: 'chaussures', image: './assets/sandal.webp' },
+    { id: 'p10', title: 'Sandales', price: 79, category: 'chaussures', image: './assets/cho.webp' },
+    { id: 'p11', title: 'Pagne Lepi', price: 79, category: 'accessoires', image: './assets/pagne.webp', isNew: true },
+
   ];
 
   const grid = document.getElementById('productGrid');
