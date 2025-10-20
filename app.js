@@ -250,8 +250,22 @@
     heroGallery.innerHTML = slice.map((src) => `<div class="tile"><img src="${src}" alt="Visuel" loading="lazy"></div>`).join('');
     heroStartIndex = (heroStartIndex + GROUP_SIZE) % heroImages.length;
   }
+  const FADE_MS = 600;
+  let heroIsAnimating = false;
+
+  function swapHeroImages(){
+    if (!heroGallery || heroIsAnimating) return;
+    heroIsAnimating = true;
+    heroGallery.classList.add('is-fading');
+    setTimeout(() => {
+      renderHeroBatch();
+      heroGallery.classList.remove('is-fading');
+      setTimeout(() => { heroIsAnimating = false; }, FADE_MS);
+    }, FADE_MS);
+  }
+
   renderHeroBatch();
-  setInterval(renderHeroBatch, 4000);
+  setInterval(swapHeroImages, 4000);
 
   // Close lightbox on backdrop click or Escape
   if (lightboxEl){
