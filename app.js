@@ -16,6 +16,7 @@
     './assets/dress2-nob.webp',
     './assets/chev.webp',
     './assets/baz-nob.webp',
+    './assets/baz-blue.webp',
   ];
 
   const products = [
@@ -33,6 +34,8 @@
     { id: 'p12', title: 'Bazin', price: 79, category: 'accessoires', image: './assets/baz.webp' },
     { id: 'p13', title: 'Meches', price: 79, category: 'accessoires', image: './assets/chev.webp' },
     { id: 'p14', title: 'Dress', price: 79, category: 'accessoires', image: './assets/dress2.webp', isNew: true },
+    { id: 'p15', title: 'Bazin Rose', price: 79, category: 'accessoires', image: './assets/bazin-pink.webp', isNew: true },
+    { id: 'p16', title: 'Bazin Bleu', price: 79, category: 'accessoires', image: './assets/bazin-blue.webp', isNew: true },
 
   ];
 

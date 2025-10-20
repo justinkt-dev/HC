@@ -58,8 +58,8 @@ body{min-height:100vh;display:flex;flex-direction:column}
 .hero .container{max-width:1320px}
 .hero__title{margin:0;font-size:48px;letter-spacing:1px;color:var(--text)}
 .hero__crumbs{margin:6px 0 0;color:var(--muted)}
-.hero__gallery{margin:26px auto 0;display:grid;grid-template-columns:repeat(4,1fr);gap:18px;max-width:1400px}
-.hero__gallery .tile{position:relative;aspect-ratio:4/5;border-radius:12px;overflow:hidden;border:none;background:transparent}
+.hero__gallery{margin:26px auto 0;display:grid;grid-template-columns:repeat(4,1fr);gap:24px;max-width:1400px}
+.hero__gallery .tile{position:relative;aspect-ratio:5/6;border-radius:12px;overflow:hidden;border:none;background:transparent}
 .hero__gallery img{width:100%;height:100%;object-fit:cover;transition:transform .35s ease}
 .hero__gallery .tile:hover img{transform:scale(1.06)}
 
