@@ -34,6 +34,8 @@
     { id: 'p4', title: 'Perruque Naturelle', price: 79, category: 'meches', image: './assets/perruque.webp' },
     { id: 'p5', title: 'Perruque Naturelle Marron', price: 79, category: 'meches', image: './assets/perruque2.webp' },
     { id: 'p6', title: 'Mèches 4 Pièces', price: 79, category: 'meches', image: './assets/hair-4p.webp' },
+    { id: 'p7', title: 'Mèches Naturelles', price: 79, category: 'meches', image: './assets/hair-sd.webp' },
+    { id: 'p8', title: 'Mèches Ondulées', price: 79, category: 'meches', image: './assets/hair-ondu.webp' },
 
 
     // Bazin
@@ -75,6 +77,7 @@
     { id: 'p50', title: 'Chaussure Ishidu GY1236', price: 79, category: 'chaussures', image: './assets/Ishidu_GY1236.webp' },
     { id: 'p51', title: 'Chaussure Ishidu WS9544', price: 79, category: 'chaussures', image: './assets/Ishidu_WS9544.webp' },
     { id: 'p52', title: 'Chaussure Marron', price: 79, category: 'chaussures', image: './assets/shoes-brown.webp' },
+    { id: 'p53', title: 'Chaussure Ishidu GY1264', price: 79, category: 'chaussures', image: './assets/shoes-GY1264.webp' },
 
 
     // Chemises
