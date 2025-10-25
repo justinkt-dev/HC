@@ -49,7 +49,7 @@
 
  
     // Accessoires
-    { id: 'p20', title: 'Boucles d’oreilles', price: 39, category: 'accessoires', image: './assets/black-bag.webp' },
+    { id: 'p20', title: 'Boucles d’oreilles', price: 39, category: 'accessoires', image: './assets/earings.webp' },
 
     // Sacs
     { id: 'p30', title: 'Sac Guess Marron', price: 99, category: 'sacs', image: './assets/bag-guess.webp', isNew: false },
@@ -78,18 +78,19 @@
 
 
     // Chemises
-    { id: 'p60', title: 'Chemise Classique', price: 49, category: 'chemises', image: './assets/hab.webp', isNew: true },
-    { id: 'p61', title: 'Chemise Slim', price: 55, category: 'chemises', image: './assets/cho.webp' },
+    { id: 'p60', title: 'Chemise Classique', price: 49, category: 'chemises', image: './assets/chem.webp', isNew: true },
+    { id: 'p61', title: 'Chemise Slim', price: 55, category: 'chemises', image: './assets/chemise.webp' },
 
     // Lacostss
-    { id: 'p70', title: 'Polo Lacostss', price: 59, category: 'lacostss', image: './assets/habit.webp', isNew: true },
+    { id: 'p70', title: 'Polo Lacostss', price: 59, category: 'lacostss', image: './assets/lacoste.webp', isNew: true },
 
     // Dentelles
-    { id: 'p80', title: 'Dentelle Élégante', price: 72, category: 'dentelles', image: './assets/dress2.webp', isNew: true },
+    { id: 'p80', title: 'Dentelle Élégante', price: 72, category: 'dentelles', image: './assets/dentelles.webp', isNew: true },
+    { id: 'p81', title: 'Dentelle Blanche', price: 72, category: 'dentelles', image: './assets/dentell-2.webp', isNew: false },
 
     // Voiles
-    { id: 'p90', title: 'Voile Léger', price: 68, category: 'voiles', image: './assets/dress.webp' },
-    { id: 'p91', title: 'Voile Premium', price: 79, category: 'voiles', image: './assets/dress2-nob.webp' },
+    { id: 'p90', title: 'Voile Léger', price: 68, category: 'voiles', image: './assets/voiles.webp' },
+    { id: 'p91', title: 'Voile Premium', price: 79, category: 'voiles', image: './assets/voile-fabric.webp' },
   ];
 
   const grid = document.getElementById('productGrid');
