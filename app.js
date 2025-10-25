@@ -12,31 +12,84 @@
     './assets/black-bag-nob.webp',
     './assets/bag-nob.webp',
     './assets/lady-nob.webp',
-    './assets/cho-nob.webp',
     './assets/dress2-nob.webp',
-    './assets/chev.webp',
     './assets/baz-nob.webp',
-    './assets/baz-blue.webp',
+    './assets/hair-nob.webp',
+    './assets/bazins-nob.webp',
+    './assets/guess-nob.webp',
+    './assets/bazvert-nob.webp',
+    './assets/ond-nob.webp',
+    './assets/Ishidu_GY1236.webp',
+    './assets/shoes-brown.webp',
+    './assets/bazrose-nob.webp',
+    './assets/bazblue-nob.webp',
+    './assets/perruque2.webp',
   ];
 
   const products = [
-    { id: 'p1', title: 'Sac A-Line', price: 115, category: 'sacs', image: './assets/bag.webp'},
-    { id: 'p2', title: 'Robe Cocktail', price: 133, category: 'robes', image: './assets/dress.webp', isNew: false },
-    { id: 'p3', title: 'Robe Soleil', price: 120, category: 'robes', image: './assets/hab.webp', isNew: true },
-    { id: 'p4', title: 'Sac Classique', price: 89, category: 'sacs', image: './assets/basin.webp'},
-    { id: 'p5', title: 'Ceinture Fine', price: 29, category: 'ceintures', image: './assets/shoes.webp', isNew: false },
-    { id: 'p6', title: 'Escarpins Chic', price: 149, category: 'chaussures', image: './assets/habit.webp', isNew: true },
-    { id: 'p7', title: 'Boucles d’oreilles', price: 39, category: 'accessoires', image: './assets/black-bag.webp' },
-    { id: 'p8', title: 'Sac Bandoulière', price: 99, category: 'sacs', image: './assets/bag.webp', isNew: false },
-    { id: 'p9', title: 'Sandales Été', price: 79, category: 'chaussures', image: './assets/sandal.webp' },
-    { id: 'p10', title: 'Sandales', price: 79, category: 'chaussures', image: './assets/cho.webp' },
-    { id: 'p11', title: 'Pagne Lepi', price: 79, category: 'accessoires', image: './assets/pagne.webp', isNew: true },
-    { id: 'p12', title: 'Bazin', price: 79, category: 'accessoires', image: './assets/baz.webp' },
-    { id: 'p13', title: 'Meches', price: 79, category: 'accessoires', image: './assets/chev.webp' },
-    { id: 'p14', title: 'Dress', price: 79, category: 'accessoires', image: './assets/dress2.webp', isNew: true },
-    { id: 'p15', title: 'Bazin Rose', price: 79, category: 'accessoires', image: './assets/bazin-pink.webp', isNew: true },
-    { id: 'p16', title: 'Bazin Bleu', price: 79, category: 'accessoires', image: './assets/bazin-blue.webp', isNew: true },
+    // Mèches
+    { id: 'p1', title: 'Mèches Naturelles Taille 20', price: 79, category: 'meches', image: './assets/hair-red.webp' },
+    { id: 'p2', title: 'Mèches Naturelles Taille 24', price: 79, category: 'meches', image: './assets/hair-fe.webp' },
+    { id: 'p3', title: 'Mèches Naturelles Ondulées', price: 79, category: 'meches', image: './assets/hair-ond.webp' },
+    { id: 'p4', title: 'Perruque Naturelle', price: 79, category: 'meches', image: './assets/perruque.webp' },
+    { id: 'p5', title: 'Perruque Naturelle Marron', price: 79, category: 'meches', image: './assets/perruque2.webp' },
+    { id: 'p6', title: 'Mèches 4 Pièces', price: 79, category: 'meches', image: './assets/hair-4p.webp' },
 
+
+    // Bazin
+    { id: 'p10', title: 'Bazin De Marque', price: 89, category: 'bazin', image: './assets/bazins.webp' },
+    { id: 'p11', title: 'Bazin Classique', price: 95, category: 'bazin', image: './assets/bazin-blue.webp' },
+    { id: 'p12', title: 'Bazin Getzner 3m', price: 79, category: 'bazin', image: './assets/bazin-getzner-rose.webp', isNew: true },
+    { id: 'p13', title: 'Bazin Getzner', price: 79, category: 'bazin', image: './assets/bazin-rouge.webp', isNew: true },
+    { id: 'p14', title: 'Bazin Getzner Vert', price: 79, category: 'bazin', image: './assets/bazin-getzner-vert.webp', isNew: false },
+    { id: 'p15', title: 'Bazin Classique', price: 79, category: 'bazin', image: './assets/bazin-class2.webp', isNew: false },
+    { id: 'p16', title: 'Bazin Getzner Bleu', price: 79, category: 'bazin', image: './assets/bazin-getzner-blue.webp', isNew: false },
+    { id: 'p17', title: 'Bazin Classique', price: 79, category: 'bazin', image: './assets/bazin-class.webp', isNew: false },
+    { id: 'p18', title: 'Bazin Getzner Jaune', price: 79, category: 'bazin', image: './assets/baz-yellow.webp', isNew: false },
+
+ 
+    // Accessoires
+    { id: 'p20', title: 'Boucles d’oreilles', price: 39, category: 'accessoires', image: './assets/black-bag.webp' },
+
+    // Sacs
+    { id: 'p30', title: 'Sac Guess Marron', price: 99, category: 'sacs', image: './assets/bag-guess.webp', isNew: false },
+    { id: 'p31', title: 'Sac Classique', price: 99, category: 'sacs', image: './assets/bag-blue.webp', isNew: false },
+    { id: 'p32', title: 'Sac Classique', price: 99, category: 'sacs', image: './assets/bag-green.webp', isNew: false },
+
+
+    // Pagne Wax
+    { id: 'p40', title: 'Pagne Lepi', price: 65, category: 'pagne-wax', image: './assets/pagne-lepi.webp', isNew: true },
+    { id: 'p41', title: 'Wax De Qualité', price: 79, category: 'pagne-wax', image: './assets/wax.webp', isNew: true },
+    { id: 'p41', title: 'Wax De Marque', price: 79, category: 'pagne-wax', image: './assets/wax4.webp', isNew: true },
+    { id: 'p42', title: 'Wax De Marque', price: 79, category: 'pagne-wax', image: './assets/wax2.webp', isNew: true },
+    { id: 'p43', title: 'Wax De Qualité', price: 79, category: 'pagne-wax', image: './assets/wax3.webp', isNew: true },
+    { id: 'p44', title: 'Wax De Marque', price: 79, category: 'pagne-wax', image: './assets/wax5.webp', isNew: true },
+    { id: 'p45', title: 'Wax De Qualité', price: 79, category: 'pagne-wax', image: './assets/wax6.webp', isNew: true },
+    { id: 'p46', title: 'Wax De Marque', price: 79, category: 'pagne-wax', image: './assets/wax7.webp', isNew: true },
+    { id: 'p47', title: 'Wax De Qualité', price: 79, category: 'pagne-wax', image: './assets/wax8.webp', isNew: true },
+    { id: 'p48', title: 'Wax De Marque', price: 79, category: 'pagne-wax', image: './assets/wax9.webp', isNew: true },
+    { id: 'p49', title: 'Wax De Qualité', price: 79, category: 'pagne-wax', image: './assets/wax10.webp', isNew: true },
+
+
+    // Chaussures
+    { id: 'p50', title: 'Chaussure Ishidu GY1236', price: 79, category: 'chaussures', image: './assets/Ishidu_GY1236.webp' },
+    { id: 'p51', title: 'Chaussure Ishidu WS9544', price: 79, category: 'chaussures', image: './assets/Ishidu_WS9544.webp' },
+    { id: 'p52', title: 'Chaussure Marron', price: 79, category: 'chaussures', image: './assets/shoes-brown.webp' },
+
+
+    // Chemises
+    { id: 'p60', title: 'Chemise Classique', price: 49, category: 'chemises', image: './assets/hab.webp', isNew: true },
+    { id: 'p61', title: 'Chemise Slim', price: 55, category: 'chemises', image: './assets/cho.webp' },
+
+    // Lacostss
+    { id: 'p70', title: 'Polo Lacostss', price: 59, category: 'lacostss', image: './assets/habit.webp', isNew: true },
+
+    // Dentelles
+    { id: 'p80', title: 'Dentelle Élégante', price: 72, category: 'dentelles', image: './assets/dress2.webp', isNew: true },
+
+    // Voiles
+    { id: 'p90', title: 'Voile Léger', price: 68, category: 'voiles', image: './assets/dress.webp' },
+    { id: 'p91', title: 'Voile Premium', price: 79, category: 'voiles', image: './assets/dress2-nob.webp' },
   ];
 
   const grid = document.getElementById('productGrid');
@@ -250,22 +303,8 @@
     heroGallery.innerHTML = slice.map((src) => `<div class="tile"><img src="${src}" alt="Visuel" loading="lazy"></div>`).join('');
     heroStartIndex = (heroStartIndex + GROUP_SIZE) % heroImages.length;
   }
-  const FADE_MS = 600;
-  let heroIsAnimating = false;
-
-  function swapHeroImages(){
-    if (!heroGallery || heroIsAnimating) return;
-    heroIsAnimating = true;
-    heroGallery.classList.add('is-fading');
-    setTimeout(() => {
-      renderHeroBatch();
-      heroGallery.classList.remove('is-fading');
-      setTimeout(() => { heroIsAnimating = false; }, FADE_MS);
-    }, FADE_MS);
-  }
-
   renderHeroBatch();
-  setInterval(swapHeroImages, 4000);
+  setInterval(renderHeroBatch, 4000);
 
   // Close lightbox on backdrop click or Escape
   if (lightboxEl){
