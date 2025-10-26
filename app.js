@@ -111,6 +111,7 @@
     { id: 'p63', title: 'Bazin Getzner 3m Ordinateur', price: 49, category: 'bazin', image: './assets/baz-getz2.webp', isNew: true },
     { id: 'p64', title: 'Bazin De Qualité', price: 49, category: 'bazin', image: './assets/baz-2.webp', isNew: true },
     { id: 'p65', title: 'Bazin Getzner Perlage 5m', price: 49, category: 'bazin', image: './assets/baz-getz5.webp', isNew: true },
+    { id: 'p66', title: 'Chemise Italienne', price: 49, category: 'chemises', image: './assets/chemise2.webp', isNew: true },
 
     // Lacostss
     { id: 'p70', title: 'Polo Lacostss', price: 59, category: 'lacostss', image: './assets/lacoste.webp', isNew: true },
