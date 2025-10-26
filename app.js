@@ -10,7 +10,6 @@
   // Asset list used for hero rotation (up to 20)
   const ASSETS = [
     './assets/black-bag-nob.webp',
-    './assets/bag-nob.webp',
     './assets/lady-nob.webp',
     './assets/dress2-nob.webp',
     './assets/baz-nob.webp',
@@ -27,6 +26,10 @@
     './assets/perruque3.webp',
     './assets/perruque4.webp',
     './assets/perruque5.webp',
+    './assets/perruque6.webp',
+    './assets/perruque7.webp',
+    './assets/ens1.webp',
+    './assets/ens2.webp',
 
   ];
 
