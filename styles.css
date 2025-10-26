@@ -50,9 +50,8 @@ body{min-height:100vh;display:flex;flex-direction:column}
 .nav__link--active{opacity:1;box-shadow:0 0 0 2px var(--primary) inset;color:var(--primary)}
 .actions{display:flex;gap:8px}
 .icon-btn{border:1px solid var(--border);background:var(--panel);height:36px;width:36px;border-radius:10px;cursor:pointer}
-.top-search{display:flex;align-items:center;gap:8px}
-.top-search input{height:36px;border:1px solid var(--border);border-radius:999px;padding:0 12px;min-width:200px;background:var(--panel);color:var(--text)}
-
+.top-search{display:flex;align-items:center;gap:8px;max-width:100%}
+.top-search input{height:36px;border:1px solid var(--border);border-radius:999px;padding:0 12px;min-width:160px;max-width:100%;width:100%;background:var(--panel);color:var(--text)}
 .hero{background:transparent;padding:64px 0 72px;border-bottom:0}
 .hero__inner{text-align:center}
 .hero .container{max-width:1320px}
@@ -133,18 +132,39 @@ body{min-height:100vh;display:flex;flex-direction:column}
 
 /* (Reverted desktop fixed sizing to restore responsive layout) */
 
-@media (max-width:1000px){
+/* Tablet layout refinements */
+@media (max-width:1024px){
   .grid{grid-template-columns:repeat(2,1fr)}
   .section-intro{grid-template-columns:1fr;gap:16px}
   .hero__gallery{grid-template-columns:repeat(2,1fr)}
+  .topbar__inner{gap:8px}
+  .actions{gap:6px}
+  .top-search input{min-width:0}
+  .chips{grid-template-columns:repeat(auto-fit,minmax(120px,1fr))}
+  .chip{height:38px;font-size:.95rem;padding:8px 14px}
 }
-@media (max-width:640px){
+/* Small tablet */
+@media (max-width:768px){
   .grid{grid-template-columns:1fr}
   .nav{display:none}
   .hero__title{font-size:36px}
   .search input{min-width:0}
   .hero{padding:48px 0 56px}
   .contact-layout{grid-template-columns:1fr}
+  .top-search{flex:1}
+  .top-search input{height:40px}
+  .chips{grid-template-columns:repeat(auto-fit,minmax(120px,1fr))}
+}
+@media (max-width:560px){
+  .container{padding:0 12px}
+  .topbar__inner{height:auto;min-height:56px}
+  .brand__name{font-size:0.95rem}
+  .actions{gap:6px}
+  .top-search{flex:1}
+  .top-search input{min-width:0;width:100%;height:38px}
+  .icon-btn{height:34px;width:34px}
+  .chips{grid-template-columns:repeat(2,1fr)}
+  .chip{height:38px}
 }
 
 

@@ -24,6 +24,10 @@
     './assets/bazrose-nob.webp',
     './assets/bazblue-nob.webp',
     './assets/perruque2.webp',
+    './assets/perruque3.webp',
+    './assets/perruque4.webp',
+    './assets/perruque5.webp',
+
   ];
 
   const products = [
@@ -36,6 +40,7 @@
     { id: 'p6', title: 'Mèches 4 Pièces', price: 79, category: 'meches', image: './assets/hair-4p.webp' },
     { id: 'p7', title: 'Mèches Naturelles', price: 79, category: 'meches', image: './assets/hair-sd.webp' },
     { id: 'p8', title: 'Mèches Ondulées', price: 79, category: 'meches', image: './assets/hair-ondu.webp' },
+    { id: 'p9', title: 'Perruque Frisé Longueur 28', price: 79, category: 'meches', image: './assets/perruque3.webp' },
 
 
     // Bazin
@@ -48,15 +53,31 @@
     { id: 'p16', title: 'Bazin Getzner Bleu', price: 79, category: 'bazin', image: './assets/bazin-getzner-blue.webp', isNew: false },
     { id: 'p17', title: 'Bazin Classique', price: 79, category: 'bazin', image: './assets/bazin-class.webp', isNew: false },
     { id: 'p18', title: 'Bazin Getzner Jaune', price: 79, category: 'bazin', image: './assets/baz-yellow.webp', isNew: false },
+    { id: 'p19', title: 'Perruque Coupe Vietnamienne', price: 79, category: 'meches', image: './assets/perruque4.webp' },
 
  
     // Accessoires
     { id: 'p20', title: 'Boucles d’oreilles', price: 39, category: 'accessoires', image: './assets/earings.webp' },
+    { id: 'p21', title: 'Voile De Qualité', price: 39, category: 'voiles', image: './assets/voile1.webp' },
+    { id: 'p22', title: 'Voile Obama', price: 39, category: 'voiles', image: './assets/voile2.webp' },
+    { id: 'p23', title: 'Virginie 24', price: 39, category: 'meches', image: './assets/hair-vir.webp' },
+    { id: 'p24', title: 'Mèches Naturelles', price: 39, category: 'meches', image: './assets/hair-2.webp' },
+    { id: 'p25', title: 'Mèches Naturelles', price: 39, category: 'meches', image: './assets/hair-3.webp' },
+    { id: 'p26', title: 'Voiles', price: 39, category: 'voiles', image: './assets/voile3.webp' },
+    { id: 'p27', title: 'Ensemble  Chaussures  et Accessoires', price: 39, category: 'accessoires', image: './assets/ens1.webp' },
+    { id: 'p28', title: 'Ensemble  Chaussures  et Accessoires', price: 39, category: 'accessoires', image: './assets/ens2.webp' },
+
 
     // Sacs
     { id: 'p30', title: 'Sac Guess Marron', price: 99, category: 'sacs', image: './assets/bag-guess.webp', isNew: false },
-    { id: 'p31', title: 'Sac Classique', price: 99, category: 'sacs', image: './assets/bag-blue.webp', isNew: false },
-    { id: 'p32', title: 'Sac Classique', price: 99, category: 'sacs', image: './assets/bag-green.webp', isNew: false },
+    { id: 'p31', title: 'Sac De Marque', price: 99, category: 'sacs', image: './assets/bag-blue.webp', isNew: false },
+    { id: 'p32', title: 'Sac De Marque', price: 99, category: 'sacs', image: './assets/bag-green.webp', isNew: false },
+    { id: 'p33', title: 'Sac Chris Bella', price: 99, category: 'sacs', image: './assets/bag-mar.webp', isNew: false },
+    { id: 'p34', title: 'Perruque Coupe 10', price: 79, category: 'meches', image: './assets/perruque5.webp' },
+    { id: 'p35', title: 'Perruque Longeur 24', price: 79, category: 'meches', image: './assets/perruque6.webp' },
+    { id: 'p36', title: 'Cheveux Indien Avec Closure Frontale', price: 79, category: 'meches', image: './assets/perruque7.webp' },
+    { id: 'p37', title: 'Mèches Naturelles 3 Pièces', price: 79, category: 'meches', image: './assets/hair-3p.webp' },
+    { id: 'p38', title: 'Voiles', price: 79, category: 'voile', image: './assets/voile4.webp' },
 
 
     // Pagne Wax
@@ -77,15 +98,23 @@
     { id: 'p50', title: 'Chaussure Ishidu GY1236', price: 79, category: 'chaussures', image: './assets/Ishidu_GY1236.webp' },
     { id: 'p51', title: 'Chaussure Ishidu WS9544', price: 79, category: 'chaussures', image: './assets/Ishidu_WS9544.webp' },
     { id: 'p52', title: 'Chaussure Marron', price: 79, category: 'chaussures', image: './assets/shoes-brown.webp' },
-    { id: 'p53', title: 'Chaussure Ishidu GY1264', price: 79, category: 'chaussures', image: './assets/shoes-GY1264.webp' },
+    { id: 'p53', title: 'Chaussure De Marque', price: 79, category: 'chaussures', image: './assets/shoes-1.webp' },
+    { id: 'p54', title: 'Chaussure De Marque', price: 79, category: 'chaussures', image: './assets/shoes-2.webp' },
+    { id: 'p55', title: 'Chaussure De Marque', price: 79, category: 'chaussures', image: './assets/shoes-3.webp' },
+    { id: 'p56', title: 'Chaussure De Marque', price: 79, category: 'chaussures', image: './assets/shoes-4.webp' },
 
 
     // Chemises
     { id: 'p60', title: 'Chemise Classique', price: 49, category: 'chemises', image: './assets/chem.webp', isNew: true },
     { id: 'p61', title: 'Chemise Slim', price: 55, category: 'chemises', image: './assets/chemise.webp' },
+    { id: 'p62', title: 'Bazin Getzner 3m Perlé', price: 49, category: 'bazin', image: './assets/baz-getz.webp', isNew: true },
+    { id: 'p63', title: 'Bazin Getzner 3m Ordinateur', price: 49, category: 'bazin', image: './assets/baz-getz2.webp', isNew: true },
+    { id: 'p64', title: 'Bazin De Qualité', price: 49, category: 'bazin', image: './assets/baz-2.webp', isNew: true },
+    { id: 'p65', title: 'Bazin Getzner Perlage 5m', price: 49, category: 'bazin', image: './assets/baz-getz5.webp', isNew: true },
 
     // Lacostss
     { id: 'p70', title: 'Polo Lacostss', price: 59, category: 'lacostss', image: './assets/lacoste.webp', isNew: true },
+    { id: 'p71', title: 'Voiles De Qualité', price: 59, category: 'voiles', image: './assets/voile5.webp', isNew: true },
 
     // Dentelles
     { id: 'p80', title: 'Dentelle Élégante', price: 72, category: 'dentelles', image: './assets/dentelles.webp', isNew: true },
