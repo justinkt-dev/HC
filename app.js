@@ -60,15 +60,14 @@
 
  
     // Accessoires
-    { id: 'p20', title: 'Boucles d’oreilles', price: 39, category: 'accessoires', image: './assets/earings.webp' },
-    { id: 'p21', title: 'Dentelle De Qualité', price: 39, category: 'dentelles', image: './assets/voile1.webp' },
-    { id: 'p22', title: 'Voile Obama', price: 39, category: 'voiles', image: './assets/voile2.webp' },
-    { id: 'p23', title: 'Virginie 24', price: 39, category: 'meches', image: './assets/hair-vir.webp' },
-    { id: 'p24', title: 'Mèches Naturelles', price: 39, category: 'meches', image: './assets/hair-2.webp' },
-    { id: 'p25', title: 'Mèches Naturelles', price: 39, category: 'meches', image: './assets/hair-3.webp' },
-    { id: 'p26', title: 'Dentelle De Marque', price: 39, category: 'dentelles', image: './assets/voile3.webp' },
-    { id: 'p27', title: 'Ensemble  Chaussures  et Accessoires', price: 39, category: 'accessoires', image: './assets/ens1.webp' },
-    { id: 'p28', title: 'Ensemble  Chaussures  et Accessoires', price: 39, category: 'accessoires', image: './assets/ens2.webp' },
+    { id: 'p20', title: 'Dentelle De Qualité', price: 39, category: 'dentelles', image: './assets/voile1.webp' },
+    { id: 'p21', title: 'Voile Obama', price: 39, category: 'voiles', image: './assets/voile2.webp' },
+    { id: 'p22', title: 'Virginie 24', price: 39, category: 'meches', image: './assets/hair-vir.webp' },
+    { id: 'p23', title: 'Mèches Naturelles', price: 39, category: 'meches', image: './assets/hair-2.webp' },
+    { id: 'p24', title: 'Mèches Naturelles', price: 39, category: 'meches', image: './assets/hair-3.webp' },
+    { id: 'p25', title: 'Dentelle De Marque', price: 39, category: 'dentelles', image: './assets/voile3.webp' },
+    { id: 'p26', title: 'Ensemble  Chaussures  et Accessoires', price: 39, category: 'accessoires', image: './assets/ens1.webp' },
+    { id: 'p27', title: 'Ensemble  Chaussures  et Accessoires', price: 39, category: 'accessoires', image: './assets/ens2.webp' },
 
 
     // Sacs
@@ -108,13 +107,12 @@
 
 
     // Chemises
-    { id: 'p60', title: 'Chemise Classique', price: 49, category: 'chemises', image: './assets/chem.webp', isNew: true },
-    { id: 'p61', title: 'Chemise Slim', price: 55, category: 'chemises', image: './assets/chemise.webp' },
-    { id: 'p62', title: 'Bazin Getzner 3m Perlé', price: 49, category: 'bazin', image: './assets/baz-getz.webp', isNew: true },
-    { id: 'p63', title: 'Bazin Getzner 3m Ordinateur', price: 49, category: 'bazin', image: './assets/baz-getz2.webp', isNew: true },
-    { id: 'p64', title: 'Bazin De Qualité', price: 49, category: 'bazin', image: './assets/baz-2.webp', isNew: true },
-    { id: 'p65', title: 'Bazin Getzner Perlage 5m', price: 49, category: 'bazin', image: './assets/baz-getz5.webp', isNew: true },
-    { id: 'p66', title: 'Chemise Italienne', price: 49, category: 'chemises', image: './assets/chemise2.webp', isNew: true },
+    { id: 'p60', title: 'Chemise Slim', price: 55, category: 'chemises', image: './assets/chemise.webp' },
+    { id: 'p61', title: 'Bazin Getzner 3m Perlé', price: 49, category: 'bazin', image: './assets/baz-getz.webp', isNew: true },
+    { id: 'p62', title: 'Bazin Getzner 3m Ordinateur', price: 49, category: 'bazin', image: './assets/baz-getz2.webp', isNew: true },
+    { id: 'p63', title: 'Bazin De Qualité', price: 49, category: 'bazin', image: './assets/baz-2.webp', isNew: true },
+    { id: 'p64', title: 'Bazin Getzner Perlage 5m', price: 49, category: 'bazin', image: './assets/baz-getz5.webp', isNew: true },
+    { id: 'p65', title: 'Chemise Italienne', price: 49, category: 'chemises', image: './assets/chemise2.webp', isNew: true },
 
     // Lacostss
     { id: 'p70', title: 'Polo Lacostss', price: 59, category: 'lacostss', image: './assets/lacoste.webp', isNew: true },
