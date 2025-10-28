@@ -48,25 +48,25 @@
 
     // Bazin
     { id: 'p10', title: 'Bazin De Marque', price: 89, category: 'bazin', image: './assets/bazins.webp' },
-    { id: 'p11', title: 'Bazin Classique', price: 95, category: 'bazin', image: './assets/bazin-blue.webp' },
+    { id: 'p11', title: 'Voile De Marque', price: 95, category: 'voiles', image: './assets/bazin-blue.webp' },
     { id: 'p12', title: 'Bazin Getzner 3m', price: 79, category: 'bazin', image: './assets/bazin-getzner-rose.webp', isNew: true },
     { id: 'p13', title: 'Bazin Getzner', price: 79, category: 'bazin', image: './assets/bazin-rouge.webp', isNew: true },
     { id: 'p14', title: 'Bazin Getzner Vert', price: 79, category: 'bazin', image: './assets/bazin-getzner-vert.webp', isNew: false },
-    { id: 'p15', title: 'Bazin Classique', price: 79, category: 'bazin', image: './assets/bazin-class2.webp', isNew: false },
+    { id: 'p15', title: 'Voile De Marque', price: 79, category: 'voiles', image: './assets/bazin-class2.webp', isNew: false },
     { id: 'p16', title: 'Bazin Getzner Bleu', price: 79, category: 'bazin', image: './assets/bazin-getzner-blue.webp', isNew: false },
-    { id: 'p17', title: 'Bazin Classique', price: 79, category: 'bazin', image: './assets/bazin-class.webp', isNew: false },
+    { id: 'p17', title: 'Voile De Marque', price: 79, category: 'voiles', image: './assets/bazin-class.webp', isNew: false },
     { id: 'p18', title: 'Bazin Getzner Jaune', price: 79, category: 'bazin', image: './assets/baz-yellow.webp', isNew: false },
     { id: 'p19', title: 'Perruque Coupe Vietnamienne', price: 79, category: 'meches', image: './assets/perruque4.webp' },
 
  
     // Accessoires
     { id: 'p20', title: 'Boucles d’oreilles', price: 39, category: 'accessoires', image: './assets/earings.webp' },
-    { id: 'p21', title: 'Voile De Qualité', price: 39, category: 'voiles', image: './assets/voile1.webp' },
+    { id: 'p21', title: 'Dentelle De Qualité', price: 39, category: 'dentelles', image: './assets/voile1.webp' },
     { id: 'p22', title: 'Voile Obama', price: 39, category: 'voiles', image: './assets/voile2.webp' },
     { id: 'p23', title: 'Virginie 24', price: 39, category: 'meches', image: './assets/hair-vir.webp' },
     { id: 'p24', title: 'Mèches Naturelles', price: 39, category: 'meches', image: './assets/hair-2.webp' },
     { id: 'p25', title: 'Mèches Naturelles', price: 39, category: 'meches', image: './assets/hair-3.webp' },
-    { id: 'p26', title: 'Voiles', price: 39, category: 'voiles', image: './assets/voile3.webp' },
+    { id: 'p26', title: 'Dentelle De Marque', price: 39, category: 'dentelles', image: './assets/voile3.webp' },
     { id: 'p27', title: 'Ensemble  Chaussures  et Accessoires', price: 39, category: 'accessoires', image: './assets/ens1.webp' },
     { id: 'p28', title: 'Ensemble  Chaussures  et Accessoires', price: 39, category: 'accessoires', image: './assets/ens2.webp' },
 
@@ -118,7 +118,7 @@
 
     // Lacostss
     { id: 'p70', title: 'Polo Lacostss', price: 59, category: 'lacostss', image: './assets/lacoste.webp', isNew: true },
-    { id: 'p71', title: 'Voiles De Qualité', price: 59, category: 'voiles', image: './assets/voile5.webp', isNew: true },
+    { id: 'p71', title: 'Dentelle De Qualité', price: 59, category: 'dentelles', image: './assets/voile5.webp', isNew: true },
 
     // Dentelles
     { id: 'p80', title: 'Dentelle Élégante', price: 72, category: 'dentelles', image: './assets/dentelles.webp', isNew: true },
